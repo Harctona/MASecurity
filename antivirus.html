@@ -9,6 +9,8 @@
       flex: 1 0 auto;
       }
    </style>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 </head>
@@ -24,12 +26,12 @@
       <nav>
          <div class="nav-wrapper purple">
             <a href="#" class="brand-logo center ">Security Precautions</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
                <li><a href="index.html">Home</a></li>
                <li class="active"><a href="antivirus.html">Antivirus Software</a></li>
                <li><a href="encr.html">Encryption</a></li>
             </ul>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
                <li><a href="biom.html">Biometrics</a></li>
                <li><a href="fire.html">Firewalls</a></li>
                <li><a href="soft.html">Security Sofware Suite</a></li>
@@ -38,25 +40,61 @@
       </nav>
    </header>
    <main>
-      <div class="container">
-         <div class="row">
-            <div class="col s12">
-               <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                     <img class="activator" src="images/office.jpg">
-                  </div>
-                  <div class="card-content">
-                     <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                     <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                     <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
+   <div class="container">
+      <div class="row">
+         <div class="col s6">
+            <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                  <img src="virus.png">
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                  <img src="phone.jpg">
+               </div>
+            </div>
+         </div>
+         <div class="col s6">
+            <div class="card">
+               <div class="card-content black-text">
+                  <span class="card-title black-text"><strong>What is anti-virus software?</strong></span>
+                  <p>
+                     An anti-virus software program is a computer program that can be used to scan files to identify and eliminate computer viruses and other malicious software (malware). 
+                     How does anti-virus software provide protection?
+                  </p>
+                  <br>
+                  <p>
+                     Anti-virus software typically uses two different techniques to protect the device:<br>
+                     -  Examining files to look for known viruses by means of a virus dictionary <br>
+                     -  Identifying suspicious behaviour from any computer program which might indicate infection <br><br>
+                     Most commercial anti-virus software uses both of these approaches, with an emphasis on the virus dictionary approach. <br>
+                  </p>
+                  </p>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-content black-text">
+                  <span class="card-title black-text"><strong>Virus dictionary approach</strong></span>
+                  <p>
+In the virus dictionary approach, when the anti-virus software examines a file, it refers to a dictionary of known viruses that have been identified by the author of the anti-virus software. If a piece of code in the file matches any virus identified in the dictionary, then the anti-virus software can then either delete the file, quarantine it so that the file is inaccessible to other programs and its virus is unable to spread, or attempt to repair the file by removing the virus itself from the file. <br><br>
+Dictionary-based anti-virus software typically examines files when the computer's operating system creates, opens, and closes them; and when the files are e-mailed. In this way, a known virus can be detected immediately upon receipt. The software can also typically be scheduled to examine all files on the user's hard disk on a regular basis. <br><br>
+Although the dictionary approach is considered effective, virus authors have tried to stay a step ahead of such software by writing "polymorphic viruses", which encrypt parts of themselves or otherwise modify themselves as a method of disguise, so as to not match the virus's signature in the dictionary. 
+                  </p>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-content black-text">
+                  <span class="card-title black-text"><strong>Suspicious behavior approach</strong></span>
+                  <p>
+The suspicious behavior approach doesn’t attempt to identify known viruses, but instead monitors the behavior of all programs. If one program tries to write data to an executable program, for example, this is flagged as suspicious behavior and the user is alerted to this, and asked what to do.<br><br>
+The suspicious behavior approach therefore provides protection against brand-new viruses that do not yet exist in any virus dictionaries. However, it also sounds a large number of false positives, and users probably become desensitized to all the warnings. If the user clicks "Accept" on every such warning, then the anti-virus software is obviously useless to that user. This problem has especially been made worse over the past 7 years, since many more non-malicious program designs chose to modify other .exes without regards to this false positive issue. Thus, most modern anti-virus software uses this technique less and less. 
+                  </p>
                </div>
             </div>
          </div>
       </div>
+      </div>
+   </div>
    </main>
    <footer class="page-footer purple">
       <!--<div class="container">
