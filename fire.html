@@ -24,17 +24,15 @@
    </script>
    <header>
       <nav>
-         <div class="nav-wrapper purple">
+         <div class="nav-wrapper teal">
             <a href="#" class="brand-logo center ">Security Precautions</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                <li><a href="index.html">Home</a></li>
                <li><a href="antivirus.html">Antivirus Software</a></li>
                <li><a href="encr.html">Encryption</a></li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
                <li><a href="biom.html">Biometrics</a></li>
                <li class="active"><a href="fire.html">Firewalls</a></li>
-               <li><a href="soft.html">Security Sofware Suite</a></li>
+               <!--li><a href="soft.html">Security Sofware Suite</a></li-->
             </ul>
          </div>
       </nav>
@@ -53,56 +51,43 @@
                      </p>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col s6">
-                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                           <img class="activator" src="finger.jpg">
-                        </div>
-                        <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Fingerprint Recognition<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                           <span class="card-title grey-text text-darken-4">Fingerprint Recognition<i class="material-icons right">close</i></span>
-                           <p>
-                              Everyone has a unique, unchanging fingerprint. A fingerprint is made of a series of ridges and furrows on the surface of the finger and these are used to determine the uniqueness of the fingerprint. Once registered on the fingerprint scanner, the image of these patterns is converted into a code through a mathematical sequence called an algorithm which effectively becomes a digital form of you. This is stored on a database for comparison which grants authentication and access through the secured door. <br><br>
-                              Using fingerprints for identification and recognition is the oldest use of biometrics. Nowadays, even laptops and USB pen drives can be found with fingerprint readers. But, there are many reasons why the use of fingerprints is the most common form of biometric security. Firstly, fingerprinting will remain a reliable form of security even as you age. Iris and facial recognition in particular cannot overcome feature changes, whereas through using a biometric fingerprint scanner, the fingerprint will stand the test of time. Also, you will not need to change anything about the appearance of your fingerprints. If you wear glasses or have hair obstructing certain points of the face for example you will need to remove the glasses or pull back your hair each time you present your face for scanning.
-                           </p>
-                        </div>
-                     </div>
+               <div class="card">
+                  <div class="card-content black-text">
+                     <span class="card-title black-text"><strong>Packet-filtering Firewall</strong></span>
+                     <p>
+                        A packet-filtering firewall is a router or computer running software that has been configured to screen incoming and outgoing packets. A packet-filtering firewall accepts or denies packets based on information contained in the packets' TCP and IP headers. For example, most packet-filtering firewalls can accept or deny a packet based on the packet's full association, which consists of the following:<br><br>
+                        - Source address<br>
+                        - Destination address<br>
+                        - Application or protocol<br>
+                        - Source port number<br>
+                        - Destination port number<br>
+                     </p>
                   </div>
-                  <div class="col s6">
-                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                           <img class="activator" src="iris.jpg">
-                        </div>
-                        <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Iris Recognition<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                           <span class="card-title grey-text text-darken-4">Iris Recognition<i class="material-icons right">close</i></span>
-                           <p>
-Iris recognition is an automated method of biometric identification that uses mathematical pattern-recognition techniques on video images of one or both of the irises of an individual's eyes, whose complex random patterns are unique, stable, and can be seen from some distance.<br><br>
-Retinal scanning is a different, ocular-based biometric technology that uses the unique patterns on a person's retina blood vessels and is often confused with iris recognition. Iris recognition uses video camera technology with subtle near infrared illumination to acquire images of the detail-rich, intricate structures of the iris which are visible externally. Digital templates encoded from these patterns by mathematical and statistical algorithms allow the identification of an individual or someone pretending to be that individual. Databases of enrolled templates are searched by matcher engines at speeds measured in the millions of templates per second per (single-core) CPU, and with remarkably low false match rates.<br><br>
-Several hundred millions of persons in several countries around the world have been enrolled in iris recognition systems for convenience purposes such as passport-free automated border-crossings, and some national ID programs. A key advantage of iris recognition, besides its speed of matching and its extreme resistance to false matches, is the stability of the iris as an internal and protected, yet externally visible organ of the eye.<br><br>
-                           </p>
-                        </div>
-                     </div>
+               </div>
+               <div class="card">
+                  <div class="card-content black-text">
+                     <span class="card-title black-text"><strong>Circuit-level Gateway</strong></span>
+                     <p>
+                        A circuit-level gateway monitors TCP handshaking between packets from trusted clients or servers to untrusted hosts and vice versa to determine whether a requested session is legitimate. To filter packets in this way, a circuit-level gateway relies on data contained in the packet headers for the Internet's TCP session-layer protocol. Because a circuit-level gateway filters packets at the session layer of the OSI model, this gateway operates two layers higher than a packet-filtering firewall does. <br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-content black-text">
+                     <span class="card-title black-text"><strong>Application-level Gateway</strong></span>
+                     <p>
+                        Like a circuit-level gateway, an application-level gateway intercepts incoming and outgoing packets, runs proxies that copy and forward information across the gateway, and functions as a proxy server, preventing any direct connection between a trusted server or client and an untrusted host. However, the proxies that an application-level gateway runs differ in two important ways from the pipe proxies that a circuit-level gateway uses:<br><br>
+                        - The proxies are application specific<br>
+                        - The proxies can filter packets at the application layer of the OSI model.<br>
+                     </p>
                   </div>
                </div>
             </div>
          </div>
       </div>
+      </div>
    </main>
-   <footer class="page-footer purple">
-      <!--<div class="container">
-         <div class="row">
-           <div class="col l6 s12">
-             <h5 class="white-text">Footer Content</h5>
-             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-           </div>
-         </div>
-         </div>-->
+   <footer class="page-footer teal">
       <div class="footer-copyright">
          <div class="container">
             &copy; 2015 Harctona
