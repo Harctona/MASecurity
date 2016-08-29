@@ -13,3 +13,7 @@
   main {
     flex: 1 0 auto;
   }
+
+.MathJax {
+font-size: 150%; 
+}

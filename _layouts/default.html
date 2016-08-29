@@ -1,0 +1,108 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Higher Mathematics</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+  <script type="text/javascript">
+    $(".button-collapse").sideNav();
+  </script>
+</head>
+<body>
+    <header>
+      <nav class="top-nav blue">
+        <div class="container">
+          <div class="nav-wrapper"><a class="page-title"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+        </div>
+      </nav>
+      <ul id="nav-mobile" class="side-nav fixed">
+        <!--li class="search">
+          <div class="search-wrapper card">
+            <input id="search"><i class="material-icons">search</i>
+            <div class="search-results"></div>
+          </div-->
+        </li>
+        <li class="bold {% if page.subtitle == "home" %}bold active{% endif %}"><a href="/" class="waves-effect waves-teal">Home</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal {% if page.subtitle == "higherans" || page.subtitle == "n5ans" %}active{% endif %}">Text-Book Answers</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li class="bold"><a href="/answers/higher">Higher</a></li>
+                  <!--li><a href="/answers/n5ans.html" class="disabled">National 5</a></li-->
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal {% if page.subtitle == "notes" %}active{% endif %}">Notes</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li class="bold"><a href="/notes/differentiation">Differentiation</a></li>
+                  <!--li><a href="/answers/n5ans.html" class="disabled">National 5</a></li-->
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!--li class="bold"><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+        <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li-->
+      </ul>
+    </header>
+    <main>
+    <div class="section blue" id="index-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m9">
+            <h1 class="header center-on-small-only white-text"> {{ page.title }}</h1>  
+            <h4 class="light blue-text text-lighten-4 center-on-small-only">{{ page.desc }}</h4>        
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="section col s12 m9 110">
+
+          {{ content }}
+    
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Disclaimer</h5>
+          <p class="grey-text text-lighten-4">This site was created and is maintained by pupils of <a href="https://www.morrisonsacademy.org/" class="white-text text-darken-3">Morrison's Academy</a> and is intended to act as a resource/index for those studying Higher Mathematics. This site has no further affiliation, nor was it commissioned or requested by a representative of <a href="https://www.morrisonsacademy.org/" class="white-text text-darken-3">Morrison's Academy</a>. </p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      &copy; <a class="blue-text text-lighten-3" href="http://materializecss.com">Callum Finlayson - d6d2d6@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/js/materialize.js"></script>
+  <script src="/js/init.js"></script>
+
+  </body>
+</html>
