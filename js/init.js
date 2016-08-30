@@ -1,12 +1,7 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
   // Initialize collapse button
-  $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   $('.collapsible').collapsible();
     $('.button-collapse').sideNav({
@@ -15,3 +10,6 @@
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   );
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
