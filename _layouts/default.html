@@ -20,7 +20,6 @@
           <div class="nav-wrapper"><a class="page-title"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
         </div>
       </nav>
-      <div class="container">
       <ul id="nav-mobile slide-out" class="side-nav fixed">
         <!--li class="search">
           <div class="search-wrapper card">
@@ -70,7 +69,6 @@
         <!--li class="bold"><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
         <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li-->
       </ul>
-    </div>
     </header>
     <main>
     <div class="section blue" id="index-banner">
@@ -117,7 +115,10 @@
   <script src="/js/materialize.js"></script>
   <script src="/js/init.js"></script>
   <script type="text/javascript">
-    
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  $('.collapsible').collapsible();
   </script>
   </body>
 </html>
